@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+* {
+    --lineaer-background: linear-gradient( rgba(175, 103, 233), rgba(101, 101, 231));
+    --white: rgb(241, 241, 241);
+    --orang-hover: hsl(14, 73%, 65%);
+    --texth1: hsl(237, 12%, 33%);
+    --textp: hsl(237, 12%, 33%);
+    --line: hsl(240, 5%, 91%);
+    margin: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    background-image: var(--lineaer-background);
+}
+
+.box {
+    display: flex;
+    width: 50vw;
+    height: 55vh;
+    margin-top: 24vh;
+    margin-left: 25vw;
+    background-color: var(--white);
+    border-radius: 1.5vw;
+}
+
+.iner {
+    overflow: hidden;
+}
+
+.iner>:first-child {
+    width: 24vw;
+    height: 40vh;
+    position: relative;
+    margin-left: -4vw;
+    margin-top: 10vh;
+}
+
+.iner2>:first-child {
+    width: 50vw;
+    height: 100vh;
+    margin-top: -79vh;
+    margin-left: -30vw;
+}
+
+.box-desktop>:first-child {
+    position: absolute;
+    margin-left: -27vw;
+    margin-top: 25vh;
+    width: 10vw;
+    height: 20vh;
+}
+
+#more,
+#more2,
+#more3,
+#more4,
+#more5 {
+    display: none;
+    margin-top: 1vh;
+    font-size: 13px;
+}
+
+#icon,
+#icon2,
+#icon3,
+#icon4,
+#icon5 {
+    float: right;
+    margin-right: 1vw;
+}
+
+#myBtn,
+#myBtn2,
+#myBtn3,
+#myBtn4,
+#myBtn5 {
+    cursor: pointer;
+}
+
+#myBtn:hover,
+#myBtn2:hover,
+#myBtn3:hover,
+#myBtn4:hover,
+#myBtn5:hover {
+    color: var(--orang-hover);
+}
+
+.text {
+    margin-top: 11vh;
+    margin-left: 6vw;
+    width: 20vw;
+    height: 42vh;
+    overflow: hidden;
+}
+
+.text>p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--textp);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.text>h1 {
+    font-size: 2vw;
+    margin-bottom: 5vh;
+    color: var(--texth1);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.line {
+    width: 50vw;
+    height: 0.1vh;
+    background-color: var(--line);
+}
+
+.woman-mobile {
+    display: none;
+}
+
+.pattern-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1090px) {
+    .box {
+        margin-left: 50%;
+        margin-top: 50vh;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 500px;
+        border-radius: 25px;
+    }
+    .iner {
+        display: none;
+    }
+    .woman-mobile {
+        display: block;
+        margin-top: -100px;
+        margin-left: 25px;
+    }
+    .box-desktop {
+        display: none;
+    }
+    .text {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        margin-left: 25px;
+        margin-top: 150px;
+        max-height: 330px;
+    }
+    .text>h1 {
+        margin-left: 110px;
+        font-size: 30px;
+    }
+    .text>p {
+        font-size: 13px;
+    }
+    #more,
+    #more2,
+    #more3,
+    #more4,
+    #more5 {
+        font-size: 12px;
+    }
+    .pattern-mobile {
+        display: block;
+        margin-left: -240px;
+        margin-top: 10px;
+    }
+}
